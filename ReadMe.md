@@ -57,13 +57,14 @@ Framework provides 3 different reports:
 
 # `RUNNING TESTS`
 
-### Run a specific Scenario  (Specify a particular scenario by *line*)
+[comment]: <> (### Run a specific Scenario  &#40;Specify a particular scenario by *line*&#41;)
 
-mvn test -Dcucumber.options="classpath:Features/SauceLabs.feature:53"
-mvn test -Dcucumber.options="/src/test/resources/Features/SauceLabs.feature:53"
-==> This works because Maven puts `./src/test/resources` on your `classpath`.
+[comment]: <> (mvn test -Dcucumber.options="classpath:Features/SauceLabs.feature:53")
 
-mvn test -Dcucumber.options="/src/test/resources/Component_X/Hear_Shout.feature:7"
+[comment]: <> (mvn test -Dcucumber.options="/src/test/resources/Features/SauceLabs.feature:53")
+
+[comment]: <> (==> This works because Maven puts `./src/test/resources` on your `classpath`.)
+
 
 ### Running only the scenarios that failed in the previous run
 
