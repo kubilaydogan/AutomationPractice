@@ -8,8 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        publish = true,
-//        tags =  "@sauce and not @ignore",
+        tags =  "@sauce and not @ignore",
         features = {"src/test/resources/Features"},
         glue = {"StepDefinitions"},
         plugin = {
@@ -19,7 +18,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        monochrome = true
+        monochrome = true,
+        publish = false
 )
 public class RunCucumberTest {
     @AfterClass

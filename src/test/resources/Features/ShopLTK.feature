@@ -6,6 +6,7 @@ Feature: LTK-1234 New User SignUp and login functionality
   Background:
     Given user is on main page
 
+  @DE3344 
   Scenario: New user should be able to signup and redirected to home page
     When user signup a new user
       | email    | randomEmail |
