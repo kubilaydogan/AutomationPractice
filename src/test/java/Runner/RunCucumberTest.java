@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags =  "@sauce and not @ignore",
+//        tags =  "@sauce and not @ignore",
+        tags =  " @speer",
         features = {"src/test/resources/Features"},
         glue = {"StepDefinitions"},
         plugin = {
